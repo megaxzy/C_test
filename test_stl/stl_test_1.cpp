@@ -28,26 +28,14 @@ iterator erase(iterator first, iterator last); //
 /*
 int main(int argc, char* argv[]) {
     map<int,int> m;
-    int j=0;
-    int k=0;
-    for(int i=5;i<55;i++){
+    for(int i=5;i<20;i++){
         if(i%2==0)
             m[i]=1;
-
-        //cout<<j++;
-        //cout<<++k;
-        //cout<<endl;
     }
-    for(map<int,int>::iterator iter=m.begin();iter!=m.end();){  //auto
+    for(auto iter=m.begin();iter!=m.end();){  //auto
         cout<<(*iter).first<<endl;
         m.erase(iter++);
+        cout<<(*iter).first<<endl;
     }
-    vector<int>  x(22,1);
-    for(auto iter=x.begin();iter!=x.end();){  //auto
-        cout<<(*iter)<<endl;
-        x.erase(iter);
-    }
-    cout<<"size"<<x.size();
     return 0;
-}
-*/
+}*/
